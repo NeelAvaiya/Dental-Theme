@@ -22,13 +22,11 @@ body {
   color: white;
   font-size: 0.9rem;
   height: 45px;
- 
 
   .container {
     @include flex-center;
     justify-content: space-between;
     padding: 0.9rem 0;
-     
   }
 
   .contact-info,
@@ -82,7 +80,7 @@ body {
             a {
               text-decoration: none;
               color: black;
-              font-weight: bold;
+              font-weight: 500;
               padding-bottom: 4px;
               border-bottom: none;
               transition: all 0.3s ease;
@@ -130,7 +128,7 @@ body {
       color: black;
       span {
         color: $header-color;
-        font-weight: 700;
+        font-weight: 600;
       }
 
       @include respond(mobile) {
@@ -155,31 +153,67 @@ body {
       a {
         text-decoration: none;
         border-radius: 5px;
+      }
 
-        &.btn-primary1 {
-          background-color: $header-color;
-          color: white;
-          height: 55px;
-          width: 200px;
-          margin-left: -220px;
-          border-radius: 30px;
-          
-          p {
-            font-size: 16px;
-            text-align: center;
-          }
+      a.btn-primary1 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 215px;
+        height: 60px;
+        font-size: 16px;
+        color: white;
+        background: #00a7d7;
+        border: none;
+        border-radius: 50px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        text-decoration: none;
+        margin-left: -190px;
+
+        &::before,
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          width: 20px;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.1);
+          z-index: 0;
         }
 
-        &.btn-video {
-          background-color: transparent;
-          color: $text-blue;
-          display: flex;
-          align-items: center;
+        &::before {
+          left: -3px;
+          transform: skewX(30deg);
+        }
 
-          .play {
-            height: 60px;
-            margin-right: 8px;
-          }
+        &::after {
+          right: -3px;
+          transform: skewX(30deg);
+        }
+
+        span {
+          position: relative;
+          z-index: 1;
+        }
+
+        .arrows {
+          margin-left: 10px;
+          font-size: 1.1em;
+        }
+      }
+
+      a.btn-video {
+        background-color: transparent;
+        color: $text-blue;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+
+        .play {
+          height: 60px;
+          margin-right: 8px;
         }
       }
     }
@@ -233,7 +267,7 @@ body {
 @media (max-width: 768px) {
   .top-bar {
     height: 60px;
-    font-size: 18px;
+    font-size: 14px;
     .contact-info {
       @include flex-center;
       gap: 1rem;
@@ -276,7 +310,7 @@ body {
 
 @media (max-width: 425px) {
   .top-bar {
-    height: 60px;
+    height: 65px;
     .contact-info {
       margin-left: 10px;
       font-size: 15px;
@@ -325,6 +359,11 @@ body {
   }
 }
 @media (max-width: 375px) {
+  .top-bar {
+    .contact-info {
+      font-size: 12px;
+    }
+  }
   .hero {
     .hero-content {
       .smile {
@@ -348,7 +387,7 @@ body {
     height: 60px;
     .contact-info {
       margin-left: 8px;
-      font-size: 12px;
+      font-size: 10px;
     }
     .social-icons {
       margin-left: 80px;
@@ -402,7 +441,6 @@ body {
   }
 
   .right2 {
- 
     padding-left: 0px;
     margin-left: 580px;
 
@@ -437,8 +475,7 @@ body {
     }
 
     .p3 {
-      font-size: 16px;
-
+      font-size: 14px;
       margin-bottom: 25px;
     }
 
@@ -624,8 +661,8 @@ body {
       .ul-union {
         display: flex;
         gap: 5px;
-       margin-top: -10px;
-margin-bottom: 5px;
+        margin-top: -10px;
+        margin-bottom: 5px;
         .underline1 {
           @include underline($text-orange);
         }
@@ -923,7 +960,7 @@ margin-bottom: 5px;
       display: block;
     }
     .right2 {
-      margin-top:-75px;
+      margin-top: -75px;
       margin-left: 20px;
       .p1 {
         font-size: 15px;
@@ -1583,7 +1620,8 @@ margin-bottom: 5px;
 
       .right-img-wp {
         display: flex;
-        gap: 15px; // 1.5rem
+        gap: 15px;
+        margin-top: -25px;
 
         &-left {
           margin-top: 30px; // 3rem
@@ -1890,7 +1928,7 @@ margin-bottom: 5px;
         &-lower1 {
           .tik1 {
             display: flex;
-            margin: 15px;
+            margin: 8px;
             gap: 10px;
 
             img {
@@ -1947,7 +1985,7 @@ margin-bottom: 5px;
         &-lower1 {
           .tik1 {
             display: flex;
-            margin: 15px;
+            margin: 8px;
             gap: 10px;
 
             img {
@@ -2001,7 +2039,7 @@ margin-bottom: 5px;
         &-lower1 {
           .tik1 {
             display: flex;
-            margin: 15px;
+            margin: 8px;
             gap: 10px;
 
             img {
@@ -2213,22 +2251,21 @@ margin-bottom: 5px;
   }
   @media (max-width: 320px) {
     margin-left: -555px;
-    .head{
+    .head {
       padding-left: 13px;
-      &-left{
-        p{
+      &-left {
+        p {
           font-size: 16px;
         }
       }
-      &-right{
-        .btn{
-          
-          .custom-btn{
+      &-right {
+        .btn {
+          .custom-btn {
             height: 50px;
             width: 280px;
           }
         }
-        .p1{
+        .p1 {
           font-size: 24px;
         }
       }
@@ -2236,13 +2273,13 @@ margin-bottom: 5px;
     .maincard {
       margin-top: 10px;
       margin-left: 350px;
-      &-card1{
+      &-card1 {
         width: 290px;
       }
-      &-card2{
+      &-card2 {
         width: 290px;
       }
-      &-card3{
+      &-card3 {
         width: 290px;
       }
     }
@@ -2332,7 +2369,6 @@ margin-bottom: 5px;
 
         .border {
           border-bottom: 3px dashed rgb(226, 225, 225);
-          padding-bottom: 45px;
         }
       }
 
@@ -2861,9 +2897,8 @@ margin-bottom: 5px;
   }
 }
 
-// Newsletter Section
 .newsletter-section {
-  background-image: url("src/bottom.png");
+  background-image: url("../src/bottom.png");
   color: $text-color;
   padding: 48px 16px;
 
@@ -3072,7 +3107,7 @@ margin-bottom: 5px;
           }
           button {
             margin-left: 0;
-            padding: 14px 85px;
+            padding: 14px 105px;
             margin-top: 0px;
           }
         }
@@ -3092,7 +3127,7 @@ margin-bottom: 5px;
           }
           button {
             margin-left: 0;
-            padding: 14px 85px;
+
             margin-left: -20px;
           }
         }

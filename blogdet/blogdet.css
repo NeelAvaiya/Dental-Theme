@@ -261,7 +261,7 @@ header .container .mobile-menu-toggle {
   max-width: 1140px;
   margin: auto;
   display: flex;
-  height: 2500px;
+  height: 2600px;
 }
 .container1-left {
   max-width: 720px;
@@ -271,8 +271,8 @@ header .container .mobile-menu-toggle {
   padding-top: 80px;
 }
 .container1-left .blog-img img {
-  height: 492px;
-  width: 720px;
+  height: 552px;
+  width: 721px;
 }
 .container1-left .blog-img span {
   position: absolute;
@@ -478,7 +478,7 @@ header .container .mobile-menu-toggle {
 .container1-left .comment-form .post-btn {
   background: linear-gradient(45deg, #31c1ef, #00a9ce);
   color: #fff;
-  padding: 18px 50px;
+  padding: 18px 45px;
   border: none;
   border-radius: 50px;
   font-size: 16px;
@@ -488,6 +488,7 @@ header .container .mobile-menu-toggle {
   align-items: center;
   gap: 10px;
   transition: all 0.3s ease;
+  margin-bottom: 50px;
 }
 .container1-left .comment-form .post-btn:hover {
   box-shadow: 0 4px 12px rgba(0, 169, 206, 0.5);
@@ -647,7 +648,7 @@ header .container .mobile-menu-toggle {
 @media (max-width: 1024px) {
   .container1 {
     display: block;
-    height: 3900px;
+    height: 4000px;
   }
   .container1-left {
     margin-left: 150px;
@@ -662,7 +663,7 @@ header .container .mobile-menu-toggle {
 }
 @media (max-width: 768px) {
   .container1 {
-    height: 4500px;
+    height: 4000px;
   }
   .container1-left {
     margin-left: 25px;
@@ -675,6 +676,9 @@ header .container .mobile-menu-toggle {
   }
 }
 @media (max-width: 425px) {
+  .container1 {
+    height: 4570px;
+  }
   .container1-left {
     max-width: 410px;
   }
@@ -725,7 +729,7 @@ header .container .mobile-menu-toggle {
 }
 @media (max-width: 320px) {
   .container1 {
-    height: 4910px;
+    height: 4970px;
   }
   .container1-left {
     max-width: 300px;
@@ -824,7 +828,7 @@ header .container .mobile-menu-toggle {
   }
 }
 .newsletter-section .container .news .newsletter-form button:hover {
-  background-color: #081d2d;
+  background-color: rgb(7.6442307692, 29.0480769231, 45.3557692308);
 }
 
 .footer-main {
@@ -930,7 +934,7 @@ header .container .mobile-menu-toggle {
 }
 
 .footer-bottom {
-  background-color: #0a2541;
+  background-color: rgb(9.96, 37.35, 64.74);
   text-align: center;
   padding: 1px;
   color: rgb(199, 194, 194);

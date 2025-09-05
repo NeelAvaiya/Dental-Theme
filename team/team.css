@@ -636,7 +636,7 @@ header .container .mobile-menu-toggle {
   }
 }
 .newsletter-section .container .news .newsletter-form button:hover {
-  background-color: #081d2d;
+  background-color: rgb(7.6442307692, 29.0480769231, 45.3557692308);
 }
 
 .footer-main {
@@ -742,7 +742,7 @@ header .container .mobile-menu-toggle {
 }
 
 .footer-bottom {
-  background-color: #0a2541;
+  background-color: rgb(9.96, 37.35, 64.74);
   text-align: center;
   padding: 1px;
   color: rgb(199, 194, 194);

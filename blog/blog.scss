@@ -243,7 +243,11 @@ header {
           border-bottom: 3px dotted rgb(226, 225, 225);
         }
         &_para2 {
-          margin-top: 35px;
+          margin-top: 45px;
+          a{
+            text-decoration: none;
+            color: $text-blue;
+          }
         }
 
         .blog-img {
@@ -268,6 +272,13 @@ header {
         .border {
           border-bottom: 3px dotted rgb(226, 225, 225);
           padding-bottom: 15px;
+        }
+        &_para2 {
+          margin-top: 30px;
+          a{
+            text-decoration: none;
+            color: $text-blue;
+          }
         }
 
         p {
@@ -302,7 +313,11 @@ header {
         }
 
         &_para2 {
-          margin-top: 45px;
+          margin-top: 55px;
+          a{
+            text-decoration: none;
+            color: $text-blue;
+          }
         }
         .blog-img {
           position: relative;

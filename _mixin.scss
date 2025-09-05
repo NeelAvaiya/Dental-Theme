@@ -217,8 +217,12 @@
 
   &_para2 {
     p {
-      color: black;
+      
       font-size: 18px;
+      a{
+        text-decoration: none;
+        color: $text-blue;
+      }
 
       span {
         color: $header-color;
